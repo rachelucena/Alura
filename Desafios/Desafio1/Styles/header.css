@@ -1,0 +1,51 @@
+.cabecalho {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.container__imagem {
+    margin-left: 5em;
+    margin-right: 0.5em;
+}
+
+.container__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cinza);
+    margin-right: 6em;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.lista__opcoes {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.opcoes {
+    list-style: none;
+    margin-left: 25em;
+    margin-right: 2em;
+}
+
+.botao-cadastrar {
+    display: inline-block;
+    background-color: var(--grena);
+    color: var(--cor-de-fundo);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
