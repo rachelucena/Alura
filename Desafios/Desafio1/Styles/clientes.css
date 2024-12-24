@@ -1,0 +1,34 @@
+.clientes__sessao {
+    text-align: center;
+    background-color: rgba(255, 209, 209, 0.185);
+}
+
+.clientes__subtitulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grena);
+    margin-bottom: 40px;
+    padding: 50px;
+}
+
+.clientes__opiniao {
+    font-size: 36px;
+    color: var(--cinza-escuro);
+    margin-bottom: 40px;
+}
+
+.clientes__imagem {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.clientes__texto {
+    padding-bottom: 15px;
+}
+
+.clientes__texto1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza);
+    margin-bottom: 30px;
+}
