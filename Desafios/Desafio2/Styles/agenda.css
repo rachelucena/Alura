@@ -1,0 +1,137 @@
+.agenda {
+    background-color: var(--cor-cinza-fundo);
+    padding: 15px;
+}
+
+.agenda__container {
+    background-color: var(--cor-branco);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.agenda__dia {
+    color: var(--cor-cinza-escuro);
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.agenda__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.agenda__parte1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.agenda__imagem {
+    width: 32px;
+    height: 32px;
+    top: 206.5px;
+    left: 32px;
+    border-radius: 16px;
+}
+
+.agenda__detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.agenda__nome {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-cinza-escuro);
+}
+
+.agenda__consulta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.agenda__icone {
+    width: 16px;
+    height: 16px;
+}
+
+.agenda__inf {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cor-cinza-claro);
+}
+
+.agenda__chat {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    transform: none;
+}
+
+.agenda__hora {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--cor-cinza-claro);
+    margin-top: 10px 0;
+}
+
+.agenda__botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.agenda__ligacao {
+    background-color: var(--cor-laranja);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.agenda__audio {
+    color: var(--cor-cinza-claro);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.agenda__endereco {
+    background-color: var(--cor-azul);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 25px;
+}
+
+.agenda__link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#link1 {
+    color: var(--cor-branco);
+}
+
+#link2 {
+    color: var(--cor-cinza-escuro);
+    border: 1px solid var(--cor-cinza-claro);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#link3 {
+    color: var(--cor-branco);
+
+}
+
+
