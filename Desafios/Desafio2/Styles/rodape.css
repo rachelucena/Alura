@@ -1,0 +1,43 @@
+.rodape {
+    padding: 15px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.rodape__container {
+    background-color: var(--cor-branco);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rodape__checkbox {
+    display: none;
+}
+
+.rodape__botoes {
+    padding: 12px;
+}
+
+.botao-flutuante {
+    position: fixed;
+    width: 56%;
+    height: 56%;
+    left: 205px;
+    bottom: -120px;
+    background-image: url(../Assets/Botão\ flutuante.png);
+    background-size: 56px 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+.rodape__checkbox:checked ~ .botao-flutuante {
+    display: block;
+}
+
+.rodape__container {
+    position: relative; 
+}

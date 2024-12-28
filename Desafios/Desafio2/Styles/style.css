@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./agenda.css);
+@import url(./rodape.css);
 
 :root {
     --fonte-principal: "Montserrat";
