@@ -2,13 +2,21 @@
     padding: 15px;
     position: fixed;
     bottom: 0px;
+    width: 100%;
+    z-index: 100;
 }
 
 .rodape__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--cor-branco);
     border-radius: 8px;
     padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .rodape__checkbox {
@@ -32,6 +40,7 @@
     border-radius: 50%;
     display: none;
     cursor: pointer;
+    z-index: 101;
 }
 
 .rodape__checkbox:checked ~ .botao-flutuante {
@@ -40,4 +49,20 @@
 
 .rodape__container {
     position: relative; 
+}
+
+@media (min-width: 768px) {
+    .rodape__container {
+        padding: 15px 40px;
+    }
+
+    .botao-flutuante {
+        bottom: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .rodape__container {
+        padding: 20px 60px;
+    }
 }
