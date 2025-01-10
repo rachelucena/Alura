@@ -1,0 +1,15 @@
+@import url(./styles/cabecalho.css);
+@import url(./styles/destaque.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444444;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 1200px;
+}
