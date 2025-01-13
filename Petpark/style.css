@@ -4,6 +4,8 @@
 @import url(./styles/planos.css);
 @import url(./styles/ofertas.css);
 @import url(./styles/parceiros.css);
+@import url(./styles/newsletter.css);
+@import url(./styles/rodape.css);
 
 :root {
     /* Cores */
@@ -93,4 +95,8 @@ body {
 
 .container {
     width: 1200px;
+
+    @media (max-width: 768px) {
+        width: 640px;
+    }
 }
