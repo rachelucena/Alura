@@ -1,24 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Variaveis */
-$primary-color: #212529;
-$secondary-color: #fff;
-$accent-color: #8a5e36;
-$font-family-primary: 'Barlow', sans-serif;
-
-body {
-    font-family: $font-family-primary;
-    background-color: $secondary-color;
-    color: $primary-color;
-
-    a {
-        color: $primary-color;
-
-        &:hover {
-            color: $accent-color;
-        }
-    }
-}
+@use './base/reset';
+@use './base/variables';
+@use './layout/header';
+@use './components/cards';
+@use './pages/home';
+@use './utils/mixins';
+@use './components/buttons';
+@use './components/forms';
+@use './components/modals';
