@@ -1,6 +1,17 @@
 @use '../base/variables';
 @use '../utils/mixins';
 
+%base-h2 {
+  color: variables.$heading-color;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+%base-p {
+  margin-bottom: variables.$margin-bottom-regular;
+  line-height: 1.6;
+}
+
 .banner {
   padding: 2rem;
   background-size: cover;
@@ -17,17 +28,27 @@
     }
 
     h2 {
-      color: variables.$heading-color;
-      font-weight: 400;
+      @extend %base-h2;
       text-align: left;
-      margin: 2rem 0;
+
+      @include mixins.respond-to(medium) {
+        font-size: 4rem;
+      }
+      
+      @include mixins.respond-to(small) {
+        font-size: 2.5rem;
+        line-height: 4rem;
+      }
     }
 
     p {
       font-size: 1.25rem;
       text-align: left;
-      margin-bottom: variables.$margin-bottom-regular;
-      line-height: 1.6;
+      @extend %base-p;
+
+      @include mixins.respond-to(small) {
+        font-size: variables.$font-size-base;
+      }
     }
   }
 
@@ -40,19 +61,20 @@
     justify-content: center;
 
     h2 {
-      color: variables.$heading-color;
-      font-weight: 400;
+      @extend %base-h2;
       text-align: center;
-      margin: 2rem 0;
       font-size: 4rem;
+
+      @include mixins.respond-to(small) {
+        font-size: 1.75rem;
+      }
     }
 
     p {
       font-size: 1.5rem;
       font-weight: 400;
       text-align: center;
-      margin-bottom: variables.$margin-bottom-regular;
-      line-height: 1.6;
+      @extend %base-p;
     }
   }
 }
@@ -62,10 +84,8 @@
   align-content: start;
 
   h2 {
-    color: variables.$heading-color;
-    font-weight: 400;
+    @extend %base-h2;
     text-align: left;
-    margin: 2rem 0;
     font-size: 5.75rem;
     line-height: 5.84rem;
     span {
@@ -76,8 +96,7 @@
   p {
     font-size: 1.25rem;
     text-align: left;
-    margin-bottom: variables.$margin-bottom-regular;
-    line-height: 1.6;
+    @extend %base-p;
   }
 }
 
@@ -104,6 +123,14 @@
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 5rem;
+
+    @include mixins.respond-to(medium) {
+      flex-direction: column;
+    }
+    
+    @include mixins.respond-to(small) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -123,5 +150,17 @@
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     margin: 4rem auto;
     padding: 0 2rem;
+
+    @include mixins.respond-to(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixins.respond-to(medium) {
+      grid-template-columns: auto;
+    }
+
+    @include mixins.respond-to(small) {
+      grid-template-columns: 1fr;
+    }
   }
 }
