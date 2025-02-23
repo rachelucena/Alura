@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write('<br>');
+            document.write('<br>');
+        }
+
+        function mostraFrase(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function calculaImc(peso, altura) {
+            return peso / (altura * altura);
+        }
+
+        var pesoFlavio = calculaImc(73, 1.71);
+    
+
+        mostraFrase('O imc do Flavio e ' + imcFlavio);
+    </script>
+</body>
+</html>
